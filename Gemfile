@@ -38,4 +38,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+# gem 'debugger'
  # testing
