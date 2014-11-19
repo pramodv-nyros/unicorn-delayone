@@ -13,6 +13,13 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+ a =  PagesController.new()
+# (:queue => 'tracking')
+# a.delay(:queue => 'tracking').delay_first_test
+#5.times{Delayed::Job.enqueue(a.delay_first_test, :queue => 'tracking')}
+5.times{a.delay.delay_first_test}
+
+ puts a
     @page = Page.find(params[:id])
 
     respond_to do |format|
@@ -40,6 +47,7 @@ class PagesController < ApplicationController
   # POST /pages
   # POST /pages.json
   def create
+
     @page = Page.new(params[:page])
 
     respond_to do |format|
@@ -80,4 +88,11 @@ class PagesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def delay_first_test
+	  i =0
+
+	  Page.create(name: "test1",test_unipages: 20)
+
+  end
+
 end
