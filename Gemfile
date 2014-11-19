@@ -21,7 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
- gem 'unicorn'
+gem "unicorn-rails"
  gem 'delayed_job_active_record'
  #gem 'gitflow'
 
