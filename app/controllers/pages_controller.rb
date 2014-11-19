@@ -17,7 +17,7 @@ class PagesController < ApplicationController
 # (:queue => 'tracking')
 # a.delay(:queue => 'tracking').delay_first_test
 #5.times{Delayed::Job.enqueue(a.delay_first_test, :queue => 'tracking')}
-5.times{a.delay.delay_first_test}
+#5.times{a.delay.delay_first_test}
 
  puts a
     @page = Page.find(params[:id])
