@@ -23,7 +23,7 @@ end
 gem 'jquery-rails'
  gem 'unicorn'
  gem 'delayed_job_active_record'
- gem 'gitflow'
+ #gem 'gitflow'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -35,8 +35,11 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
-
+ gem 'capistrano'
+gem 'capistrano3-unicorn',require: false
+gem 'capistrano-rails', require: false
+gem 'capistrano-bundler', require: false
+gem 'capistrano-rvm',require: false
 # To use debugger
 # gem 'debugger'
 # gem 'debugger'
