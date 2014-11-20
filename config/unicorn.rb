@@ -3,6 +3,9 @@
 worker_processes 3
 timeout 30
 preload_app true
+pid 'tmp/pids/unicorn.pid'
+root = "/home/nyros/Apps/unicorn-delayone"
+working_directory root
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
