@@ -1,4 +1,4 @@
-root = "/home/rails/current"
+root = "/home/nyros/Apps/unicorn-delayone"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
