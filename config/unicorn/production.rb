@@ -1,7 +1,8 @@
 # config/unicorn.rb
 # Set your full path to application.
 app_dir = File.expand_path('../../', __FILE__)
-
+p "llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll"
+puts app_dir
 # Set unicorn options
 worker_processes 2
 preload_app true
