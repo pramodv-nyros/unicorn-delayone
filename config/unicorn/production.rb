@@ -9,7 +9,9 @@ preload_app true
 timeout 360
 
 # Fill path to your app
-working_directory app_dir
+puts "--------------------------------------"
+working_directory "/home/nyros/Apps/unicorn-delayone/current/"
+puts working_directory
 
 # Set up socket location
 listen "#{app_dir}/tmp/sockets/unicorn.sock", :backlog => 64
